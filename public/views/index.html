@@ -24,7 +24,7 @@
       </form>
     </div>
 
-    <div class="container">
+    <div class="container" ng-cloak>
       <div class="results">
         <ul class="list-group" ng-repeat="trip in vm.trips track by $index">
           <h2> Trip ID: <span ng-bind="$index"></span></h2>
