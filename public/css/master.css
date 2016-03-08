@@ -28,4 +28,7 @@ header {
     border: 1px solid #ccc;
     border-radius: 4px; }
 
+.results .list-group-item {
+  list-style: none; }
+
 /*# sourceMappingURL=master.css.map */

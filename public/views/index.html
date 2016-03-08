@@ -9,22 +9,39 @@
   </head>
   <body ng-controller="mainController as vm">
     <header>
-      <h1>Travel Comparison Website</h1>
+      <h1>Travel Comparator</h1>
     </header>
 
     <div>
       <form class="form-horizontal">
         <div class="form-group">
-          <input type="text" class="form-control" name="origin" placeholder="Departure Location">
-          <input type="text" class="form-control" name="departure" placeholder="Arrival Location">
-          <input type="date" name="outboundDate">
-          <input type="date" name="inboundDate">
+          <input type="text" class="form-control" ng-model="vm.origin" name="origin" placeholder="Departure Location">
+          <input type="text" class="form-control" ng-model="vm.destination" name="destination" placeholder="Arrival Location">
+          <input type="date" ng-model="vm.outboundDate" name="outboundDate">
+          <input type="date" ng-model="vm.inboundDate" name="inboundDate">
+          <button class="btn btn-block btn-danger" ng-click="vm.retrieveDetails()" type="button" name="retrieveDetails">Retrieve Details</button>
         </div>
       </form>
+    </div>
+
+    <div class="container">
+      <div class="results">
+        <ul class="list-group" ng-repeat="trip in vm.trips track by $index">
+          <h2> Trip ID: <span ng-bind="$index"></span></h2>
+          <div class="list-group-item">
+            <li>Destination: <span ng-bind="trip.destination"></span></li>
+            <li>Departure Date: <span ng-bind="trip.departure_date"></span></li>
+            <li>Return Date: <span ng-bind="trip.return_date"></span></li>
+            <li>Price: <span ng-bind="trip.price"></span></li>
+            <li>Airline: <span ng-bind="trip.airline"></span></li>
+          </div>
+        </ul>
+      </div>
     </div>
 
   </body>
   <script src="/bower_components/angular/angular.js"></script>
   <script src="app.js"></script>
   <script src="controllers/controllers.js"></script>
+  <script src="services/amadeus.js"></script>
 </html>
