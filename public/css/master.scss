@@ -1,0 +1,34 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #404042;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c16363;
+  height: 300px;
+}
+
+.form-horizontal {
+  width: 900px;
+  margin: 10px auto 0 auto;
+  padding: 5px;
+  .form-group > input, span {
+    margin: 10px 0;
+  }
+  .form-group > input {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+}
