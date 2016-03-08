@@ -10,7 +10,13 @@ header {
   justify-content: center;
   align-items: center;
   background: #c16363;
+  color: #f2f2f2;
   height: 300px; }
+
+.heading {
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: 'Oswald', sans-serif; }
 
 .form-horizontal {
   width: 900px;
@@ -30,6 +36,11 @@ header {
     background-image: none;
     border: 1px solid #ccc;
     border-radius: 4px; }
+  .form-horizontal .btn-danger {
+    background: #c16363;
+    border-color: #c16363; }
+  .form-horizontal .btn-danger:hover {
+    background: #ab4949; }
 
 .results .list-group-item {
   list-style: none; }
