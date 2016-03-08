@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="travelComparator">
   <head>
     <meta charset="utf-8">
     <title>Travel Comparator</title>
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/css/master.css">
   </head>
-  <body>
+  <body ng-controller="mainController as vm">
     <header>
       <h1>Travel Comparison Website</h1>
     </header>
@@ -24,4 +24,7 @@
     </div>
 
   </body>
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="app.js"></script>
+  <script src="controllers/controllers.js"></script>
 </html>
