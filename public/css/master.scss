@@ -9,11 +9,15 @@ body {
 
 header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #c16363;
   color: #f2f2f2;
-  height: 300px;
+  height: 400px;
+  h2 {
+    text-transform: uppercase;
+  }
 }
 
 .heading {
@@ -82,7 +86,7 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #455169;
+  background: #626a79;
   display: flex;
   justify-content: center;
   align-items: center;
