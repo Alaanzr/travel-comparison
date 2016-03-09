@@ -11,13 +11,11 @@
   <body ng-controller="mainController as vm">
     <div class="wrapper">
       <header>
-        <h1 class="heading">Travel Comparator</h1>
-        <h2>A tool to help you compare travel data!</h2>
+        <div class="heading-overlay">
+          <h1 class="heading">Travel Comparator</h1>
+          <h2>A tool to help you compare travel data!</h2>
+        </div>
       </header>
-
-      <div class="icon">
-        <img src="/images/icon.png" alt="" />
-      </div>
 
       <div class="content">
         <div class="form">
@@ -27,7 +25,7 @@
               <input type="text" class="form-control" ng-model="vm.destination" name="destination" placeholder="Arrival Location" required>
               <input type="date" ng-model="vm.outboundDate" name="outboundDate" required>
               <input type="date" ng-model="vm.inboundDate" name="inboundDate">
-              <button class="btn btn-block btn-danger" ng-click="vm.retrieveDetails()" name="retrieveDetails">Retrieve Details</button>
+              <button class="btn btn-block btn-core" ng-click="vm.retrieveDetails()" name="retrieveDetails">Retrieve Details</button>
             </div>
           </form>
         </div>

@@ -10,11 +10,30 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #c16363;
   color: #f2f2f2;
-  height: 400px; }
+  height: 500px; }
   header h2 {
     text-transform: uppercase; }
+  header .heading-overlay {
+    background: #000;
+    opacity: 0.8;
+    width: 100%;
+    text-align: center;
+    height: 200px; }
+
+header:after {
+  content: '';
+  background: url("https://images.unsplash.com/photo-1449168013943-3a15804bb41c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=1958d4bfb59a246c6092ff0daabd284b");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
 
 .heading {
   text-transform: uppercase;
@@ -22,7 +41,7 @@ header {
   font-family: 'Oswald', sans-serif; }
 
 .form-horizontal {
-  width: 900px;
+  width: 700px;
   margin: 10px auto 0 auto;
   padding: 5px; }
   .form-horizontal .form-group > input, .form-horizontal span {
@@ -39,11 +58,13 @@ header {
     background-image: none;
     border: 1px solid #ccc;
     border-radius: 4px; }
-  .form-horizontal .btn-danger {
-    background: #c16363;
-    border-color: #c16363; }
-  .form-horizontal .btn-danger:hover {
-    background: #ab4949; }
+  .form-horizontal .btn-core {
+    background: #5b636f;
+    border-color: #5b636f;
+    color: #fff; }
+  .form-horizontal .btn-core:hover {
+    background: #707883;
+    color: #fff; }
 
 .results .list-group-item {
   list-style: none; }
@@ -61,21 +82,21 @@ header {
   position: relative; }
 
 .content {
-  padding-bottom: 100px; }
+  padding-bottom: 50px; }
 
 .footer {
-  height: 100px;
+  height: 50px;
   width: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #626a79;
+  background: #5b636f;
   display: flex;
   justify-content: center;
   align-items: center; }
   .footer img {
-    height: 64px;
-    width: 64px; }
+    height: 40px;
+    width: 40px; }
 
 @media screen and (max-width: 775px) {
   .form-horizontal {
