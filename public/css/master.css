@@ -46,7 +46,13 @@ header {
   list-style: none; }
 
 .container {
-  background: #f1f0f0; }
+  background: #f9f9f9; }
+
+.icon {
+  display: flex;
+  justify-content: center;
+  background: #fbfbfb;
+  padding: 50px 0; }
 
 @media screen and (max-width: 775px) {
   .form-horizontal {
