@@ -48,4 +48,8 @@ header {
 .container {
   background: #f1f0f0; }
 
+@media screen and (max-width: 775px) {
+  .form-horizontal {
+    width: 300px; } }
+
 /*# sourceMappingURL=master.css.map */

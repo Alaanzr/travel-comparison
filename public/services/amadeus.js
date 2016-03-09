@@ -1,4 +1,4 @@
-app.factory('Amadeus', ['$http', function($http) {
+app.factory('Amadeus', ['$http', 'Config', function($http, Config) {
   var baseUrl = 'https://api.sandbox.amadeus.com/v1.2/flights/extensive-search?';
   var apikey;
   var months = [
@@ -25,9 +25,9 @@ app.factory('Amadeus', ['$http', function($http) {
     return date[3] + '-' + convertMonthToNum(date[1]);
   }
 
-  $http.get('/config').then(function(config) {
-    apikey = config.data;
-  });
+Config.query().then(function(configs) {
+  apikey = configs.data;
+});
 
   return {
     query: function(vm) {

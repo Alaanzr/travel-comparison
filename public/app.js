@@ -1,1 +1,1 @@
-var app = angular.module('travelComparator', []);
+var app = angular.module('travelComparator', ['ngResource']);

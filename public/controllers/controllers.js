@@ -1,4 +1,4 @@
-app.controller('mainController', ['$http', 'Amadeus', function($http, Amadeus) {
+app.controller('mainController', ['$http', 'Amadeus', 'Config', function($http, Amadeus, Config) {
   var vm = this;
 
   vm.retrieveDetails = function() {
