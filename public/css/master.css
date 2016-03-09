@@ -15,7 +15,7 @@ header {
 
 .heading {
   text-transform: uppercase;
-  font-size: 60px;
+  font-size: 70px;
   font-family: 'Oswald', sans-serif; }
 
 .form-horizontal {
@@ -51,8 +51,28 @@ header {
 .icon {
   display: flex;
   justify-content: center;
-  background: #fbfbfb;
   padding: 50px 0; }
+
+.wrapper {
+  min-height: 100vh;
+  position: relative; }
+
+.content {
+  padding-bottom: 100px; }
+
+.footer {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #455169;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer img {
+    height: 64px;
+    width: 64px; }
 
 @media screen and (max-width: 775px) {
   .form-horizontal {
