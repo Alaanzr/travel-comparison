@@ -20,13 +20,13 @@
 
       <div class="content">
         <div class="form">
-          <form class="form-horizontal">
+          <form class="form-horizontal" name="form">
             <div class="form-group">
-              <input type="text" class="form-control" ng-model="vm.origin" name="origin" placeholder="Departure Location">
-              <input type="text" class="form-control" ng-model="vm.destination" name="destination" placeholder="Arrival Location">
-              <input type="date" ng-model="vm.outboundDate" name="outboundDate">
+              <input type="text" class="form-control" ng-model="vm.origin" name="origin" placeholder="Departure Location" required>
+              <input type="text" class="form-control" ng-model="vm.destination" name="destination" placeholder="Arrival Location" required>
+              <input type="date" ng-model="vm.outboundDate" name="outboundDate" required>
               <input type="date" ng-model="vm.inboundDate" name="inboundDate">
-              <button class="btn btn-block btn-danger" ng-click="vm.retrieveDetails()" type="button" name="retrieveDetails">Retrieve Details</button>
+              <button class="btn btn-block btn-danger" ng-click="vm.retrieveDetails()" name="retrieveDetails">Retrieve Details</button>
             </div>
           </form>
         </div>
